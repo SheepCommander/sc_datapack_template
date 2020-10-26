@@ -10,11 +10,11 @@
 #==================================================================#
 
 # Install needed scoreboards
-scoreboard objectives add SC_ID
+scoreboard objectives add ssID
 
 # Confirm initiation back end
-scoreboard objectives add SC_Init
-scoreboard players set $sc_datapack_template sc_init 1
+scoreboard objectives add ssInit
+scoreboard players set $sc_datapack_template ssInit 1
 
 # Confirm initiation front end
 tellraw @a [{"text": "[SC] ","color": "aqua"},{"text": "DataPack sc_datapack_template successfully initiated!","color": "gold"}]
