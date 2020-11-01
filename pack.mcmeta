@@ -1,6 +1,6 @@
 {
-    "pack": {
-      "pack_format": 6,
-      "description": "Include what to change"
-    }
+  "pack": {
+    "pack_format": 6,
+    "description": "Description goes here NOTE: Make sure Pack Format is correct"
+  }
 }
