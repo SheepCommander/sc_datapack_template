@@ -9,9 +9,5 @@
 #   Twitter: https://twitter.com/sheep_commander                   #
 #==================================================================#
 
-# Confirm Reloading Front-end
-tellraw @a [{"text": "[SC]: ","color": "aqua"},{"text": "Successfully reloaded!","color": "dark_aqua"}]
-
-# Test for if already initiated > Initiate if not, message if so
+# Initiate unless initiated
 execute unless score scInit $sc_datapack_template matches 1 run function sc:init
-execute if score scInit $sc_datapack_template matches 1 run tellraw @a [{"text": "\nNOTE: ","color": "red","bold": true},{"text": "The datapack \"sc_datapack_template\" has not re-installed. If you have accidently deleted a scoreboard or need to re-initiate the datapack click ","color": "red"},{"text": "here","color": "yellow","underlined": true,"clickEvent": {"action": "run_command","value": "function sc:init"}}]

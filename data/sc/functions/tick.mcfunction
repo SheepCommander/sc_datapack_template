@@ -10,4 +10,4 @@
 #==================================================================#
 
 # Scoreboard ID System
-execute as @a[scores=!{scID=1..}] run function sc:new_player
+execute as @a unless score @s scID matches 1.. run function sc:new_player
